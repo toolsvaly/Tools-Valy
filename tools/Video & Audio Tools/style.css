@@ -1,0 +1,169 @@
+/* --- Custom Styles & Color Theme --- */
+:root {
+    --primary-blue: #3B82F6;
+    --dark-blue: #1E3A8A;
+    --light-blue-bg: #EFF6FF;
+    --neutral-gray: #6B7280;
+    --white: #FFFFFF;
+    --shadow-color: rgba(59, 130, 246, 0.1);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--white);
+}
+
+/* --- Header --- */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,.05);
+    background-color: var(--white);
+}
+.navbar-brand {
+    font-weight: 600;
+    color: var(--dark-blue);
+}
+.nav-link {
+    color: var(--neutral-gray);
+    font-weight: 500;
+}
+.nav-link.active, .nav-link:hover {
+    color: var(--primary-blue);
+}
+.contact-email {
+    color: var(--neutral-gray);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* --- Hero Section --- */
+.hero-section {
+    background-color: var(--light-blue-bg);
+    padding: 80px 0;
+}
+.hero-section .display-5 {
+    color: var(--dark-blue);
+    font-weight: 700;
+}
+.hero-section .lead {
+    color: var(--neutral-gray);
+}
+.btn-primary-custom {
+    background-color: var(--primary-blue);
+    border-color: var(--primary-blue);
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s;
+}
+.btn-primary-custom:hover {
+    background-color: #1E3A8A; /* Darker blue on hover */
+    border-color: #1E3A8A;
+}
+.hero-illustration {
+    max-width: 100%;
+    height: auto;
+}
+
+/* --- Search Bar --- */
+.search-bar-container {
+    padding: 60px 0;
+}
+.search-input {
+    border-radius: 0.5rem;
+    border: 1px solid #ced4da;
+    padding: 15px 20px;
+    box-shadow: 0 4px 12px var(--shadow-color);
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+.search-input:focus {
+    border-color: var(--primary-blue);
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.2);
+    outline: none;
+}
+
+/* --- Tool Sections --- */
+.tool-section {
+    padding: 40px 0;
+    /* Added transition for smooth hiding/showing */
+    transition: opacity 0.3s ease-in-out;
+}
+.section-heading {
+    color: var(--dark-blue);
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+.section-subheading {
+    color: var(--neutral-gray);
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tool-card {
+    border: none;
+    border-radius: 0.75rem; /* Rounded corners */
+    box-shadow: 0 4px 12px var(--shadow-color);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.tool-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.15);
+}
+.tool-card .card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.tool-card .card-title {
+    color: var(--dark-blue);
+    font-weight: 600;
+}
+.tool-card .card-text {
+    color: var(--neutral-gray);
+    font-size: 0.9rem;
+    flex-grow: 1;
+}
+.tool-card .btn-outline-primary-custom {
+    border-color: var(--primary-blue);
+    color: var(--primary-blue);
+    font-weight: 500;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s, color 0.2s;
+}
+.tool-card .btn-outline-primary-custom:hover {
+    background-color: var(--primary-blue);
+    color: var(--white);
+}
+.tool-card-icon {
+    font-size: 2.5rem;
+    color: var(--primary-blue);
+}
+
+/* --- Footer --- */
+.footer {
+    background-color: var(--light-blue-bg);
+    color: var(--neutral-gray);
+    padding: 40px 0;
+    margin-top: 60px;
+}
+.footer .logo-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--dark-blue);
+}
+.footer .tagline {
+    font-style: italic;
+}
+.footer a {
+    color: var(--neutral-gray);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.footer a:hover {
+    color: var(--primary-blue);
+    text-decoration: underline;
+}
