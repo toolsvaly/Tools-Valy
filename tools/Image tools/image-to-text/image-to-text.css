@@ -1,0 +1,56 @@
+.tool-container {
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.step-title {
+    color: var(--dark-blue);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.tool-card-main {
+    border: none;
+    border-radius: 0.75rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+.upload-box {
+    border: 3px dashed var(--primary-blue);
+    border-radius: 0.75rem;
+    padding: 50px 20px;
+    background-color: var(--light-blue-bg);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.upload-box:hover, .upload-box.dragover {
+    background-color: #dbeafe; /* A slightly darker shade of light-blue-bg */
+}
+
+.upload-box .display-4 {
+    color: var(--primary-blue);
+}
+
+.preview-image {
+    max-height: 400px;
+    max-width: 100%;
+    border-radius: 0.5rem;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: var(--white);
+}
+
+.hero-section .hero-icon {
+    font-size: 4rem;
+    color: var(--primary-blue);
+}
+
+#resultText {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    background-color: #fff;
+}
