@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
             subheading: "Manipulate your video and audio files effortlessly.",
             icon: "bi-film",
             tools: [
-                { name: "Video to MP3 Converter", desc: "Extract audio from your video files.", link: "#" },
+                { name: "Video to MP3 Converter", desc: "Extract audio from your video files.", link: "./tools/Video & Audio Tools/video-to-mp3/video-to-mp3.html" },
                 { name: "MP3 to Video Converter", desc: "Create a simple video from an audio file.", link: "#" },
                 { name: "Video Compressor", desc: "Reduce video file size.", link: "#" },
                 { name: "Audio Compressor", desc: "Compress your audio files.", link: "#" },
